@@ -39,7 +39,7 @@ let myLet1 = 12;
 
 // Scope
 {
-    var a = 12;;
+    var a = 12;
     var myLet = 2000;
 }
 
@@ -70,3 +70,42 @@ first_name
 */
 
 /* We can not use reserved word in our variabke name */
+
+/* Data type */
+
+// numbers
+let num1 = 3; // define a integer vriable
+let num2 = 2.5; // define a float variable
+
+/* 
++ add
+- sub
+* multiply
+** exponen (pow())
+/ devide
+% modulus
+++ add 1 to vriable
+-- sub 1 from variable
+*/
+
+/* sqrt */
+
+// 9 ** 0.5
+// 9 ** (1/3)
+// 16 ** (1/4)
+
+// num1++
+// ++num1
+
+// num2--
+// --num2
+
+/*
+=
++=
+-=
+*=
+/=
+%=
+**=
+*/
