@@ -109,3 +109,14 @@ let num2 = 2.5; // define a float variable
 %=
 **=
 */
+
+
+let firstname = "AmirMahdy";
+let lastname = "Turani";
+let age = 23;
+
+let Data = "This is" + firstname + " " + lastname + " and he is " + age
++ "years old";
+
+console.log(Data);
+document.write("Salam")
