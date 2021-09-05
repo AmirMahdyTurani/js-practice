@@ -116,6 +116,7 @@ let lastname = "Turani";
 let age = 23;
 
 let Data = "This is" + firstname + " " + lastname + " and he is " + age
-+ "years old";
++ "years old"; // string formating with +
 
 console.log(Data);
+
