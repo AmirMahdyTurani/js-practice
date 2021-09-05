@@ -140,3 +140,47 @@ data.endswith("S"); // data ends with "S" ? true or false
 let numPad = "5";
 console.log(data.padStart(4, 0)); // 0005
 console.log(data.padEnd(4, 0)); // 5000
+
+/* Boolean */
+
+/*
+true
+false
+*/
+
+typeof true // boolean
+
+/*
+== equal value
+=== equal value and equal type
+!== not equal type or value
+> greather than
+<
+>=
+<=
+!= not equal
+*/
+
+// ternary
+let a = (12 > 10) ? true : false
+let nm1 = 20;
+/*
+nm1 == 20 true
+nm1 == '20' true
+nm1 === '20' false
+*/
+
+/* who are vlue is false?? */
+
+let nm = 0;
+let nmToStr = String(nm);
+let myName = "AmirMahdy";
+Number(myName); // Nan = Not a number
+Boolean(); // false
+Boolean(0); // false
+Boolean(1); // true
+Boolean(150); // true
+Boolean(-4.5); // true
+Boolean(''); // false
+Boolean('0'); // true
+
