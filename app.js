@@ -119,4 +119,3 @@ let Data = "This is" + firstname + " " + lastname + " and he is " + age
 + "years old";
 
 console.log(Data);
-document.write("Salam")
