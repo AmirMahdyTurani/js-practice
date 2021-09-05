@@ -184,3 +184,12 @@ Boolean(-4.5); // true
 Boolean(''); // false
 Boolean('0'); // true
 
+/* null and undefined */
+
+let first_name1;
+
+typeof first_name1; // undefined
+
+let ageOfUser = null;
+
+typeof age; // object
