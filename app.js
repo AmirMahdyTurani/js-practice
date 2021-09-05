@@ -111,12 +111,32 @@ let num2 = 2.5; // define a float variable
 */
 
 
-let firstname = "AmirMahdy";
-let lastname = "Turani";
-let age = 23;
+// let firstname = "AmirMahdy";
+// let lastname = "Turani";
+// let age = 23;
 
-let Data = "This is" + firstname + " " + lastname + " and he is " + age
-+ "years old"; // string formating with +
+// let Data = "This is" + firstname + " " + lastname + " and he is " + age
+// + "years old"; // string formating with +
+
+let Data = `This is ${firstname} ${lastname} and he is ${age} years old`; // formatting with ``
 
 console.log(Data);
 
+/* String Method */
+
+data = "Hello I Am AmirMahdy Turani. I am 14 years old. I am Programer and I like math becuse it is fun. I love General Haj Qasem Soleymani."
+console.log(data.lenght); // get text's lenght
+console.log(data.slice(0, 10)); // cut a slice from string (index 0 to 9)
+console.log(data.substr(10, 4)); // cut a slice from string (index 10 to 10 until 10 + 4)
+data.toLowerCase(); // change data to lower case
+console.log(data.includes("AmirMahdy")); // data has "AmirMahdy" (case sensetive)
+data.toUpperCase(); // CHANGE DATA TO UPPER CASE
+console.log(data.search("Am")); // search first index of first "Am" in string
+data.replace("Hello", "Hi"); // replace all "Hello" with "Hi"
+let name = "      Amir Mahdy       ";
+console.log(name.trim()); // delete space from start and end of string
+data.startswith("R"); // data starts with "R" ? true or false
+data.endswith("S"); // data ends with "S" ? true or false
+let numPad = "5";
+console.log(data.padStart(4, 0)); // 0005
+console.log(data.padEnd(4, 0)); // 5000
