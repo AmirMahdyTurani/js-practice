@@ -238,6 +238,13 @@ console.log(indexof("asd")); // return -1
 numbers.find((n) => n > 10); // return first number if number > 10
 numbers.filter((n) => n > 10); // return all number if number > 10
 
+let matrix = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+];
+
+console.log(matrix[3][2]);
 
 
 
