@@ -1,3 +1,4 @@
+// In The name of God
 console.log("this message from script file"); // log in browser's console
 document.write("I am writed in html file by app.js file"); // write in html document
 alert("Welcome!"); // show a alert to user
@@ -193,3 +194,55 @@ typeof first_name1; // undefined
 let ageOfUser = null;
 
 typeof age; // object
+
+
+/* Arrays */
+
+let students = ['AmirMahdy', 'AmirSobhan', 'Roham', 'Abolfazl', 4, "AmirAli"]; // create a array
+
+console.log(students.length); // array part number
+console.log(students[0]); // first part of array
+console.log(typeof students[0]); // String
+console.log(typeof students); // object
+console.log(students); // print array
+
+console.log(students.toString()); // change array to string
+console.log(students.join(" | ")); // create array to string for example "AmirMahdy | AmirSobhan | ..."
+// let data = students.join(" | "); 
+// console.log(data.split(" | ")); // change string to array
+
+students.push('Poria'); // add item to tail of array
+students.pop(); // remove item from tail of array
+students.shift(); // remove item from head of array
+students.unshift("Saeed Shahrivari"); // add item to Head of array
+students.splice(1,2); // remove index 1 and 2 [(1,3) => remove index 1,2,3]
+students.splice(1,0,'Roham B'); // insert 'Roham B' to index 1
+students.splice(1,1,'Roham B'); // replace 'AmirSobhan' with 'Roham B'
+
+let newStudents = students.slice(0); // copy array
+let newStudents = students.slice(0, 2);  // cut a slice from array
+
+console.log(students.sort()) // sort array
+console.log(students.sort().reverse()) // reverse sort array
+console.log(students.reverse()) // reverse array
+
+let numbers = [1, 2, 25, 65, 85, 4];
+// console.log(numbers.sort()) // NO!!!
+console.log(numbers.sort((a, b) => a-b)); // sort numbers
+console.log(numbers.sort((a, b) => b-a)); // reverse sort numbers
+
+console.log(students.includes("AmirMahdy")); // is there "AmirMahdy" in Array
+students = students.concat(['AmirReza', 'Mohammad Mehdi']) // plus arrays
+console.log(indexof("AmirMahdy")); // index of 'AmirMahdy'
+console.log(indexof("asd")); // return -1
+numbers.find((n) => n > 10); // return first number if number > 10
+numbers.filter((n) => n > 10); // return all number if number > 10
+
+
+
+
+/*
+Writed by AmirMahdy Turani
+CC by Sa 2021
+teacher: mehran tarif 'github.com/mtarif98'
+*/
