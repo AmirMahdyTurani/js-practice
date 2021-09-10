@@ -246,7 +246,112 @@ let matrix = [
 
 console.log(matrix[3][2]);
 
+/* codition */
 
+// define variables
+let a = 1;
+let b = 11;
+if(b > a){
+    console.log("B greather than A"); // if b > a then this line run.
+}
+else if (a > b){
+    console.log("A greather than B"); // if a > b then this line run.
+}else{
+    console.log("B = A"); // else(a = b) then this line run.
+}
+
+/*
+
+&& and
+|| or
+! not
+
+
+false && true = false
+true && true = true
+
+false || false = false
+true || false = true
+
+!true = false
+!false = true
+
+*/
+
+//define variable
+let numberA = 10;
+let numberB = 20;
+let operation = '*';
+
+// check value of operation
+switch (operation) {
+    case '+':
+        console.log(numberA + numberB) 
+        break;
+    case '-':
+        console.log(numberA - numberB) 
+        break;
+    case '*':
+        console.log(numberA * numberB) 
+        break;
+    case '/':
+        console.log(numberA / numberB)
+        break; // !!!!
+    default: // if cases is not right run it.
+        console.log("Operation not found. Please Enter [+ - * /]:  ");
+        break;
+}
+
+
+/* Loop */
+
+let i = 0;
+while(i < students.length){
+    console.log(students[i]);
+    i++
+}
+
+i = 0
+do{
+    console.log(students[i]);
+    i++
+}while(i < students.length)
+
+for (let i = 0; i < students.length; i++) {
+    console.log(students[i]); 
+}
+
+
+for (let i = students.length; i >= 0; i--) {
+    console.log(students[i]); 
+}
+
+students.forEach((student, index) => {
+    console.log(`${index + 1} - ${student}`);
+    //...
+    //...
+    //...
+    //...
+    //...
+    //...
+});
+// student => all items
+// index => all index
+
+
+let i = 0;
+while (i < 20) {
+	i++;
+
+	if (i == 10) {
+		// continue;
+		break;
+	}
+
+	if (i % 2 == 0) {
+		console.log(i);
+	}
+}
 
 /*
 Writed by AmirMahdy Turani
