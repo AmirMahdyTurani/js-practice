@@ -344,7 +344,7 @@ while (i < 20) {
 	i++;
 
 	if (i == 10) {
-		// continue;
+		// continue; // continue
 		break;
 	}
 
@@ -352,6 +352,15 @@ while (i < 20) {
 		console.log(i);
 	}
 }
+
+/* functions */
+
+function sayHello() { // define function
+    console.log("Hello")
+    console.log("Hello Good Morning!")
+}
+
+sayHello() // call function
 
 /*
 Writed by AmirMahdy Turani
