@@ -441,8 +441,14 @@ let student = {
     lastname: "Turani",
     age: 15,
     job: "programing",
-    favorite: ["AI", "web"]
-    
+    favorite: ["AI", "web"],
+    fullName(){
+        return `${this.firstname} ${this.lastname}`
+    },
+
+    sayHello(){
+        return `Hello ${this.fullName()}!`
+    }
 }
 
 console.log(student)
@@ -462,9 +468,7 @@ student.firstname = "AmirReza"
 student.age = 10
 console.log(student)
 
-
-
-
+console.log(student.fullName());
 
 /*
 Writed by AmirMahdy Turani
