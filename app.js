@@ -355,12 +355,15 @@ while (i < 20) {
 
 /* functions */
 
+// sayHello() // call function
+
+
 // function sayHello() { // define function
 //     console.log("Hello")
 //     console.log("Hello Good Morning!")
 // }
 
-sayHello() // call function
+// sayHello() // call function
 
 /* exprresion */
 
@@ -368,6 +371,100 @@ const sayHello = function () {
     console.log("Hello")
     console.log("Hello Good Morning!")
 };
+
+sayHello()
+sayHello()
+sayHello()
+sayHello()
+sayHello()
+sayHello()
+
+for (let i = 0; i <= 10; i++) {
+    sayHello();    
+}
+
+/* =========================== */
+
+function add(a = 5, b) {
+    console.log(a + b);
+    return a + b;
+}
+
+add(5, 7);
+add(15, 7);
+add(5, 58);
+// add(5); // NaN => undifined + 5
+
+function sayHello(name) {
+    console.log(name)
+    sayHello()
+}
+
+function isPrime(number=2) {
+    let isPrime = true
+    let i = 2
+    while(i <= parseInt(((number ** 0.5) + 1))) { // parseInt => change variable type to integer
+        if (number % i == 0) {
+            isPrime = false
+            break
+        }
+        i++
+    }
+    return isPrime
+}
+
+/* Arrow function */
+
+const sayGoodMorning = () => {
+    console.log("Good Morning");
+}
+
+const multiply = (a, b) => a * b;
+
+let nums = [1,2,3,4,5,6,7,8,9]
+
+nums.forEach((n) => console.log(n)); // Arrow function
+
+/* Objects */
+
+// Students => Property = name, age, field, ...  Methods = showAvg(), ...
+
+/*
+{
+    key: value,
+}
+
+*/
+
+let student = {
+    firstname: "AmirMAhdy",
+    lastname: "Turani",
+    age: 15,
+    job: "programing",
+    favorite: ["AI", "web"]
+    
+}
+
+console.log(student)
+console.log(student.firstname)
+console.log(student.lastname)
+console.log(student.age)
+console.log(student.job)
+console.log(student.favorite)
+console.log(student.favorite.length)
+
+console.log(student['favorite'][0])
+console.log(student['favorite'][1])
+let key = "age"
+console.log(student[key])
+
+student.firstname = "AmirReza"
+student.age = 10
+console.log(student)
+
+
+
+
 
 /*
 Writed by AmirMahdy Turani
