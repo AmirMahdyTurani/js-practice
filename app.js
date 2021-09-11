@@ -355,12 +355,19 @@ while (i < 20) {
 
 /* functions */
 
-function sayHello() { // define function
-    console.log("Hello")
-    console.log("Hello Good Morning!")
-}
+// function sayHello() { // define function
+//     console.log("Hello")
+//     console.log("Hello Good Morning!")
+// }
 
 sayHello() // call function
+
+/* exprresion */
+
+const sayHello = function () {
+    console.log("Hello")
+    console.log("Hello Good Morning!")
+};
 
 /*
 Writed by AmirMahdy Turani
